@@ -12,7 +12,7 @@ function doStuff()
         local data = turtle.getItemDetail(i)
         if data then
             print(turtle.getItemDetail(i).name)
-            if (data.name  torchName and i = not torchSlot) then
+            if (data.name  torchName) and (i = not torchSlot) then
                 torchSlot = i
                 break
             end
