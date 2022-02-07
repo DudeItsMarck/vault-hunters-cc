@@ -4,7 +4,7 @@ local torchPlaceFrequency = 12
 local distance = args[1]
 
 for i=1,distance do
-    
+    doStuff()
 end
 
 function doStuff()
