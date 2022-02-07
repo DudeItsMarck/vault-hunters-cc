@@ -14,7 +14,7 @@ function doStuff()
             print(turtle.getItemDetail(i).name)
             if data.name == torchName and i == not torchSlot then
                 torchSlot = i
-                break end
+                break
             end
         end
     end
