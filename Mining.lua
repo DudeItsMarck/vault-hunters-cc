@@ -9,7 +9,6 @@ local distance = args[1]
 function doStuff()
     for i=1,16 do
         turtle.select(i)
-        local data = 
         if turtle.getItemDetail(i).name == torchName and i == not torchSlot then
             print(turtle.getItemDetail(i).name)
             torchSlot = i
