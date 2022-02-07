@@ -10,10 +10,12 @@ function doStuff()
     for i=1,16 do
         turtle.select(i)
         local data = turtle.getItemDetail(i)
-        if data.name == torchName and i == not torchSlot then
-            print(data.name)
-            torchSlot = i
-            return
+        if data then
+            if data.name == torchName and i == not torchSlot then
+                print(data.name)
+                torchSlot = i
+                return
+            end
         end
     end
 end
