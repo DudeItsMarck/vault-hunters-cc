@@ -23,10 +23,12 @@ function DoMine()
     for i=1,distance do
         if distanceFromLastTorch == torchPlaceFrequency then
             turtle.select(torchSlot)
-            turtle.placeDown()
+            turtle.dig()
+            turtle.place()
             distanceFromLastTorch = 0
+        else
+            turtle.dig()
         end
-        turtle.dig()
         turtle.forward()
         turtle.digUp()
         distanceFromLastTorch = distanceFromLastTorch + 1
