@@ -7,7 +7,7 @@ function doStuff()
     for i=1,16 do
         turtle.select(i)
         -- if turtle.getItemDetail(i)
-        print(turtle.getItemDetail(i))
+        print(turtle.getItemDetail(i).name)
     end
 end
 
