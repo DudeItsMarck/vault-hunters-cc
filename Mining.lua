@@ -6,7 +6,7 @@ local distanceFromLastTorch = 0
 local torchName = "minecraft:torch"
 local distance = args[1]
 
-function doStuff()
+function torchSlot()
     for i=1,16 do
         turtle.select(i)
         local data = turtle.getItemDetail(i)
@@ -21,6 +21,8 @@ function doStuff()
     end
 end
 
-doStuff()
-for i=1,distance do
+function main()
+    torchSlot()
 end
+
+main()
