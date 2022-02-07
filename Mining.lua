@@ -11,14 +11,14 @@ function doStuff()
         turtle.select(i)
         local data = turtle.getItemDetail(i)
         if data then
-            print(data.name)
+            -- print(data.name)
             if data.name == torchName then
                 torchSlot = i
+                print(torchSlot)
                 return
             end
         end
     end
-    print(torchSlot)
 end
 
 doStuff()
