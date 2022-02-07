@@ -7,7 +7,7 @@ function doStuff()
     for i=1,16 do
         turtle.select(i)
         local data = turtle.getItemDetail(i)
-        if data.name = not nil then
+        if data.name not = nil then
             print(turtle.getItemDetail(i).name)
         end
     end
