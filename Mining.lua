@@ -6,7 +6,8 @@ local distance = args[1]
 function doStuff()
     for i=1,16 do
         turtle.select(i)
-        if turtle.getItemDetail(i).name = not nil then
+        local data = turtle.getItemDetail(i)
+        if data.name = not nil then
             print(turtle.getItemDetail(i).name)
         end
     end
